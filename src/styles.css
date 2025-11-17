@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
 @import 'tailwindcss';
 @import 'tailwindcss-primeui';
+
 @custom-variant dark (&:where(.my-app-dark, .my-app-dark *));
+
+body {
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
