@@ -18,7 +18,7 @@
   </section>
 </div>
 
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center p-8 my-8">
+<div class="grid grid-cols-1 gap-8 justify-items-start p-8 my-8">
   @for (project of projects; track $index) {
     <app-project-card [project]="project" />
   }

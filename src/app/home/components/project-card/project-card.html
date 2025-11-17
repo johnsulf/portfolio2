@@ -1,7 +1,14 @@
-<div class="border p-4 rounded-lg flex flex-col items-center gap-4">
-  <h3>{{ project.title }}</h3>
-  <p>{{ project.description }}</p>
-  <img alt="{{ project.title }} screenshot" [src]="project.screenshot" />
+<div class="border rounded-lg items-center grid gap-8 md:flex md:grid-cols-1">
+  <img
+    alt="{{ project.title }} screenshot"
+    class="object-fill h-full rounded-lg"
+    width="200"
+    [src]="project.screenshot"
+  />
+  <div>
+    <h3>{{ project.title }}</h3>
+    <p>{{ project.description }}</p>
+  </div>
   <a target="_blank" [href]="project.githubRepo">GitHub Repo</a>
   <a target="_blank" [href]="project.liveDemo">Live Demo</a>
 </div>

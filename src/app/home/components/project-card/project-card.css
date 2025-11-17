@@ -1,0 +1,23 @@
+a {
+  background-image: linear-gradient(to right, #6366f1 0%, rgba(99, 102, 241, 0) 100%);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 0% 100%;
+  padding: 0.5rem;
+  width: fit-content;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  animation: fill 1s forwards;
+  font-weight: 600;
+}
+
+@keyframes fill {
+  from {
+    background-size: 0% 100%;
+  }
+  to {
+    background-size: 100% 100%;
+  }
+}
