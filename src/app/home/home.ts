@@ -1,11 +1,14 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { NgOptimizedImage } from '@angular/common';
+import { Component, inject } from '@angular/core';
+import { HomeService } from './home.service';
+import { ProjectCard } from './components/project-card/project-card';
 
 @Component({
   selector: 'app-home',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [NgOptimizedImage],
+  imports: [ProjectCard],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
-export class Home {}
+export class Home {
+  #homeService = inject(HomeService);
+  projects: Project[] = this.#homeService.projects;
+}

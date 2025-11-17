@@ -1,4 +1,4 @@
-<div class="grid grid-cols-2 items-center gap-8 justify-items-center p-8">
+<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8justify-items-center p-8">
   <section>
     <h1>Erlend Johnsen</h1>
     <p class="my-2">
@@ -16,4 +16,10 @@
     </div>
     <div class="border-8 h-96 w-72 absolute border-amber-200"></div>
   </section>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center p-8">
+  @for (project of projects; track $index) {
+    <app-project-card [project]="project" />
+  }
 </div>

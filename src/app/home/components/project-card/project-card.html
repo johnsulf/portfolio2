@@ -1,0 +1,9 @@
+<div>
+  <h2>{{ project.title }}</h2>
+  <p>{{ project.description }}</p>
+  <img alt="{{ project.title }} screenshot" [src]="project.screenshot" />
+  <a target="_blank" [href]="project.githubRepo">GitHub Repo</a>
+  @if (project.liveDemo) {
+    <a target="_blank" [href]="project.liveDemo">Live Demo</a>
+  }
+</div>

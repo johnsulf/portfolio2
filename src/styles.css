@@ -6,6 +6,10 @@
 
 @custom-variant dark (&:where(.my-app-dark, .my-app-dark *));
 
+html {
+  @apply transition-all duration-500;
+}
+
 body {
   font-family: 'Bricolage Grotesque', sans-serif;
 }
