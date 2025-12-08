@@ -18,8 +18,11 @@
   </section>
 </div>
 
-<div class="grid grid-cols-1 gap-8 justify-items-start p-8 my-8">
-  @for (project of projects; track $index) {
-    <app-project-card [project]="project" />
-  }
-</div>
+<section>
+  <h2>Some of my latest school projects at Noroff</h2>
+  <div class="flex p-8 m-8 gap-8">
+    @for (project of projects; track $index) {
+      <app-project-card [project]="project" />
+    }
+  </div>
+</section>

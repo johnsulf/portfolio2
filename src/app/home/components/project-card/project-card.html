@@ -1,4 +1,4 @@
-<div class="border rounded-lg items-center grid gap-8 md:flex md:grid-cols-1">
+<!-- <div class="border rounded-lg items-center grid gap-8 md:flex md:grid-cols-1">
   <img
     alt="{{ project.title }} screenshot"
     class="object-fill h-full rounded-lg"
@@ -11,4 +11,13 @@
   </div>
   <a target="_blank" [href]="project.githubRepo">GitHub Repo</a>
   <a target="_blank" [href]="project.liveDemo">Live Demo</a>
+</div> -->
+
+<div class="flex flex-col items-center gap-4 rounded-lg border w-sm h-full">
+  <img
+    [src]="project.screenshot"
+    alt="{{ project.title }} screenshot"
+    class="h-48 w-full rounded-lg object-cover"
+  />
+  <h3 class="text-base">{{ project.title }}</h3>
 </div>
