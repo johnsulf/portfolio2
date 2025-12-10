@@ -1,23 +1,44 @@
-<!-- <div class="border rounded-lg items-center grid gap-8 md:flex md:grid-cols-1">
+<article class="grid h-full border">
+  <!-- Screenshot -->
   <img
-    alt="{{ project.title }} screenshot"
-    class="object-fill h-full rounded-lg"
-    width="200"
+    class="h-56 w-full object-cover aspect-video"
+    loading="lazy"
+    [alt]="project.title + ' – screenshot'"
     [src]="project.screenshot"
   />
-  <div>
-    <h3>{{ project.title }}</h3>
-    <p>{{ project.description }}</p>
-  </div>
-  <a target="_blank" [href]="project.githubRepo">GitHub Repo</a>
-  <a target="_blank" [href]="project.liveDemo">Live Demo</a>
-</div> -->
 
-<div class="flex flex-col items-center gap-4 rounded-lg border w-sm h-full">
-  <img
-    [src]="project.screenshot"
-    alt="{{ project.title }} screenshot"
-    class="h-48 w-full rounded-lg object-cover"
-  />
-  <h3 class="text-base">{{ project.title }}</h3>
-</div>
+  <!-- Content -->
+  <div class="grid place-content-between p-4">
+    <div class="my-2">
+      <h3>
+        {{ project.title }}
+      </h3>
+
+      <p>
+        {{ project.description }}
+      </p>
+    </div>
+
+    <div class="flex gap-4">
+      <a
+        class="inline-flex items-center border p-2 font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary-500"
+        rel="noopener noreferrer"
+        target="_blank"
+        [href]="project.githubRepo"
+      >
+        View code
+        <i class="pi pi-arrow-up-right"></i>
+      </a>
+
+      <a
+        class="inline-flex items-center bg-primary-500 p-2 font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary-500"
+        rel="noopener noreferrer"
+        target="_blank"
+        [href]="project.liveDemo"
+      >
+        Live demo
+        <i class="pi pi-arrow-up-right"></i>
+      </a>
+    </div>
+  </div>
+</article>
