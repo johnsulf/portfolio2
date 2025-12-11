@@ -1,59 +1,59 @@
-# Portfolio2
+# Erlend Johnsen – Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.0.
+![Screenshot of the portfolio hero section](src/assets/portfolio2.jpg)
 
-## Development server
+An interactive portfolio that highlights my frontend development work, current skillset, and selected school projects from Noroff.
 
-To start a local development server, run:
+## Description
 
-```bash
-ng serve
-```
+This single-page application showcases recent coursework projects, provides a quick overview of the technologies I work with, and includes theming support to toggle between light and dark modes.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Responsive layout tailored for desktop and mobile
+- Built-in accessibility and performance optimizations using Angular signals and `NgOptimizedImage`
+- Deployed automatically to GitHub Pages on every push to `main`
 
-## Code scaffolding
+## Built With
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Angular
+- TypeScript
+- PrimeNG + Tailwind CSS
+- GitHub Pages (static hosting)
 
-```bash
-ng generate component component-name
-```
+## Getting Started
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Installing
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+Clone the repository and install dependencies:
 
 ```bash
-ng build
+git clone git@github.com:johnsulf/portfolio2.git
+cd portfolio2
+npm ci
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### Running
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Start the development server:
 
 ```bash
-ng test
+npm start
 ```
 
-## Running end-to-end tests
+The app will be available at `http://localhost:4200/`.
 
-For end-to-end (e2e) testing, run:
+## Contributing
 
-```bash
-ng e2e
-```
+Contributions are welcome. Please open an issue to discuss the change first, then submit a pull request from a feature branch. Make sure linting passes with `npm run lint` before requesting review.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Contact
 
-## Additional Resources
+- [Portfolio](https://johnsulf.github.io/portfolio2/)
+- [GitHub](https://github.com/johnsulf)
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Noroff Frontend Development course material for the project briefs
