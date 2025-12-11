@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ImageModule } from 'primeng/image';
-import { Project } from '../../../models/project.model';
+import { Project } from '../../../interfaces/project.interface';
 
 @Component({
   selector: 'app-project-card',

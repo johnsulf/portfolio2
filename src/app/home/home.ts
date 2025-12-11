@@ -1,15 +1,20 @@
-import { Component, inject } from '@angular/core';
-import { HomeService } from './home.service';
+import { NgOptimizedImage } from '@angular/common';
+import { Component, inject, signal, WritableSignal } from '@angular/core';
 import { ProjectCard } from './components/project-card/project-card';
-import { Project } from '../models/project.model';
+import { HomeService } from './home.service';
+import { Project } from '../interfaces/project.interface';
+import { Tech } from '../interfaces/tech.interface';
 
 @Component({
   selector: 'app-home',
-  imports: [ProjectCard],
+  imports: [ProjectCard, NgOptimizedImage],
   templateUrl: './home.html',
-  styleUrl: './home.css',
+  styleUrls: ['./home.css'],
 })
 export class Home {
-  #homeService = inject(HomeService);
-  projects: Project[] = this.#homeService.projects;
+  readonly #homeService = inject(HomeService);
+  readonly knowledgeTechs: WritableSignal<readonly Tech[]> = signal(
+    this.#homeService.knowledgeTechs,
+  );
+  readonly projects: readonly Project[] = this.#homeService.projects;
 }

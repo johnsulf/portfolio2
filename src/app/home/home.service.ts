@@ -1,10 +1,46 @@
 import { Injectable } from '@angular/core';
-import { Project } from '../models/project.model';
+import { Project } from '../interfaces/project.interface';
+import { Tech } from '../interfaces/tech.interface';
 
 @Injectable({
   providedIn: 'root',
 })
 export class HomeService {
+  readonly knowledgeTechs: readonly Tech[] = [
+    { name: 'Angular', icon: 'assets/tech/angular.svg', url: 'https://angular.dev/' },
+    {
+      name: 'ASP.NET',
+      icon: 'assets/tech/dotnet.svg',
+      url: 'https://dotnet.microsoft.com/apps/aspnet',
+    },
+    { name: 'Bootstrap', icon: 'assets/tech/bootstrap.svg', url: 'https://getbootstrap.com/' },
+    {
+      name: 'C#',
+      icon: 'assets/tech/csharp.svg',
+      url: 'https://learn.microsoft.com/dotnet/csharp/',
+    },
+    { name: 'Firebase', icon: 'assets/tech/firebase.svg', url: 'https://firebase.google.com/' },
+    { name: 'Flutter', icon: 'assets/tech/flutter.svg', url: 'https://flutter.dev/' },
+    { name: 'React', icon: 'assets/tech/react.svg', url: 'https://react.dev/' },
+    { name: 'Svelte', icon: 'assets/tech/svelte.svg', url: 'https://svelte.dev/' },
+    { name: 'Tailwind CSS', icon: 'assets/tech/tailwind.svg', url: 'https://tailwindcss.com/' },
+    {
+      name: 'TypeScript',
+      icon: 'assets/tech/typescript.svg',
+      url: 'https://www.typescriptlang.org/',
+    },
+    {
+      name: 'Visual Studio',
+      icon: 'assets/tech/visualstudio.svg',
+      url: 'https://visualstudio.microsoft.com/',
+    },
+    {
+      name: 'Visual Studio Code',
+      icon: 'assets/tech/vscode.svg',
+      url: 'https://code.visualstudio.com/',
+    },
+  ].sort((a, b) => a.name.localeCompare(b.name));
+
   projects: Project[] = [
     {
       title: 'Project Exam 2',
