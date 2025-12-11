@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { ThemeService } from '../../theme/theme.service';
 
 @Component({
   selector: 'app-header',
-  imports: [ButtonModule],
+  imports: [ButtonModule, RouterModule],
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
