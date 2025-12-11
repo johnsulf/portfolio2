@@ -1,14 +1,9 @@
-<article class="grid h-full border">
+<article class="grid h-full border max-w-sm">
   <!-- Screenshot -->
-  <img
-    class="h-56 w-full object-cover aspect-video"
-    loading="lazy"
-    [alt]="project.title + ' – screenshot'"
-    [src]="project.screenshot"
-  />
+  <p-image [alt]="project.title + ' – screenshot'" [preview]="true" [src]="project.screenshot" />
 
   <!-- Content -->
-  <div class="grid place-content-between p-4">
+  <div class="grid place-content-between gap-4 p-4">
     <div class="my-2">
       <h3>
         {{ project.title }}
@@ -31,7 +26,7 @@
       </a>
 
       <a
-        class="inline-flex items-center bg-primary-500 p-2 font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary-500"
+        class="inline-flex items-center text-neutral-900 bg-primary-200 p-2 font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary-500"
         rel="noopener noreferrer"
         target="_blank"
         [href]="project.liveDemo"

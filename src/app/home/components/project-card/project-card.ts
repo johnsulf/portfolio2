@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
+import { ImageModule } from 'primeng/image';
 import { Project } from '../../../models/project.model';
 
 @Component({
   selector: 'app-project-card',
-  imports: [],
+  imports: [ImageModule],
   templateUrl: './project-card.html',
   styleUrl: './project-card.css',
 })
