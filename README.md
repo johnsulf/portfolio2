@@ -52,7 +52,7 @@ Contributions are welcome. Please open an issue to discuss the change first, the
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is provided for educational purposes and has no specific license.
 
 ## Acknowledgments
 
